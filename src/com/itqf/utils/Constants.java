@@ -13,4 +13,11 @@ public class Constants {
     public static final String FLAG = ":";
 
     public static final String INDEX = "index";
+
+    /**
+     * 定义用户模块的常量
+     */
+    public static final String HAS_USER = "1";
+
+    public static final String NOT_HAS_USER = "0";
 }

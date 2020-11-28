@@ -13,7 +13,7 @@
 	$(function(){
 		$("#username").change(function(){
 			//使用ajax 做username 的异步验证 checkUsername?username=xxxx
-			$.get("checkUserName","username="+this.value,function(data){
+			$.get("user","username="+this.value+"&method=check",function(data){
 				if(data==1){
 					$("#usernameMsg").html("用户名已经存在").css("color","red");
 					$("#registerBtn").attr("disabled",true);
