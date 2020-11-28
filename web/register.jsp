@@ -39,12 +39,12 @@
 				<div class="xian center"></div>
 			</div>
 			<div class="center-block" style="margin-top: 80px;">
-				<form class="form-horizontal" action="userRegister" method="post">
+				<form class="form-horizontal" action="user?method=register" method="post">
 
 					<div class="form-group">
 						<label class="col-sm-2 control-label">用户名</label>
 						<div class="col-sm-8" style="width: 40%">
-							<input type="text" id="username" name="username" class="form-control col-sm-10"
+							<input type="text" id="username" name="u_name" class="form-control col-sm-10"
 								placeholder="Username" />
 						</div>
 						<div class="col-sm-2">
@@ -54,7 +54,7 @@
 					<div class="form-group">
 						<label class="col-sm-2 control-label">密码</label>
 						<div class="col-sm-8" style="width: 40%">
-							<input type="password" name="password"
+							<input type="password" name="u_password"
 								class="form-control col-sm-10" placeholder="Password" />
 						</div>
 						<div class="col-sm-2">
@@ -75,7 +75,7 @@
 					<div class="form-group">
 						<label class="col-sm-2 control-label">邮箱</label>
 						<div class="col-sm-8" style="width: 40%">
-							<input type="text" name="email" class="form-control col-sm-10"
+							<input type="text" name="u_email" class="form-control col-sm-10"
 								placeholder="Email" />
 						</div>
 						<div class="col-sm-2">
@@ -86,7 +86,7 @@
 						<label class="col-sm-2 control-label">性别</label>
 						<div class="col-sm-8" style="width: 40%">
 							<label class="radio-inline"> <input type="radio"
-								name="gender" value="男"> 男
+								name="u_sex" value="男"> 男
 							</label> <label class="radio-inline"> <input type="radio"
 								name="gender" value="女"> 女
 							</label>
@@ -102,7 +102,7 @@
 							<input type="reset" value="重置" class="btn btn-default  btn-lg" style="width: 200px;"  />
 						</div>
 					</div>
-					<div>${session.registerMsg}</div>
+					<div>${registerMsg}</div>
 				</form>
 
 			</div>
