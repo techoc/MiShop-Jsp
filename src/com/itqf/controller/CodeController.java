@@ -13,6 +13,9 @@ import java.io.IOException;
  */
 @WebServlet(name = "CodeController", value = "/code")
 public class CodeController extends BaseServlet {
+    /**
+     *生成验证码
+     */
     public void createCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
         //1.生成验证码对象
         ValidateCode validateCode = new ValidateCode(100, 35, 4, 10);

@@ -17,7 +17,7 @@ public class Product implements Serializable {
     private String p_image;     //商品图片的路径
     private BigDecimal p_price; //商品的价格
     private int p_state;        //商品的热门指数
-    private int p_info;         //商品的描述
+    private String p_info;         //商品的描述
 
     public int getP_id() {
         return p_id;
@@ -75,11 +75,11 @@ public class Product implements Serializable {
         this.p_state = p_state;
     }
 
-    public int getP_info() {
+    public String getP_info() {
         return p_info;
     }
 
-    public void setP_info(int p_info) {
+    public void setP_info(String p_info) {
         this.p_info = p_info;
     }
 
