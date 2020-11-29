@@ -57,13 +57,14 @@
                 </c:if>
                 <li>|</li>
                 <a href="" id="a_top">消息通知</a>
-                <a href="${pageContext.request.contextPath}/cartservlet?method=getCart" id="shorpcar">购物车</a>
+                <a href="${pageContext.request.contextPath}/cart?method=show&uid=${loginUser.u_id}"
+                   id="shorpcar">购物车</a>
             </span>
     </div>
 </div>
 <div id="second">
-    <a href="" id="seimg" style=" margin-top:23px;"><img id="logo" src="image/logo_top.png" width="55" height="54"/></a>
-    <a href="" id="seimg" style=" margin-top:17px;"><img id="gif" src="image/yyymix.gif" width="180" height="66"/></a>
+    <a href="/" id="seimg" style=" margin-top:23px;"><img id="logo" src="image/logo_top.png" width="55" height="54"/></a>
+    <a href="/" id="seimg" style=" margin-top:17px;"><img id="gif" src="image/yyymix.gif" width="180" height="66"/></a>
     <p id="goodsType">
         <!-- 根据ajax 回调函数 填写数据 到此id中 -->
 

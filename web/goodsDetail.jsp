@@ -45,7 +45,7 @@
                         </p>
                         <p>详细介绍:</p>
                         <p>&nbsp;&nbsp;${product.p_info}</p>
-                        <a href="${pageContext.request.contextPath}/addCart?goodsId=${product.p_id}&price=${product.p_price}"
+                        <a href="${pageContext.request.contextPath}/cart?method=create&pid=${product.p_id}"
                            class="btn btn-warning">加入购物车&nbsp;&nbsp;&nbsp;<span
                                 class="glyphicon glyphicon-shopping-cart"></span></a>&nbsp;&nbsp;&nbsp;
                         <button class="btn btn-danger">直接购买</button>

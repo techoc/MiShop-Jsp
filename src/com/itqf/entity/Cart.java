@@ -13,8 +13,17 @@ public class Cart implements Serializable {//实现序列化
     private int c_id;    //购物车的唯一标识
     private int u_id;    //用户实体的主键属性
     private int p_id;    //商品的唯一主键
+    private Product product;
     private BigDecimal c_count; //购物车小计
-    private int c_num;   //购物车商品数量
+    private int c_num = 0;   //购物车商品数量
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
     public int getC_id() {
         return c_id;
@@ -41,7 +50,10 @@ public class Cart implements Serializable {//实现序列化
     }
 
     public BigDecimal getC_count() {
-        return c_count;
+        BigDecimal price = product.getP_price();
+        BigDecimal bigDecimal = new BigDecimal(c_num);
+
+        return price.multiply(bigDecimal);
     }
 
     public void setC_count(BigDecimal c_count) {
