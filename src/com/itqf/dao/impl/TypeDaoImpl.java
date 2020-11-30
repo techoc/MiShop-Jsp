@@ -10,10 +10,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class TypeDaoImpl implements TypeDao {
-    private final QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
 
     @Override
     public List<Type> selectAll() throws SQLException {
+        QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
         String sql = "select * from type limit 5;";
         return queryRunner.query(sql, new BeanListHandler<>(Type.class));
     }

@@ -47,7 +47,7 @@
                     <a href="register.jsp" id="a_top">注册</a>
                 </c:if>
        			<c:if test="${not empty loginUser}">
-                    <a href="userAddress?flag=show" id="a_top">${loginUser.u_name}</a>
+                    <a href="address?method=show" id="a_top">${loginUser.u_name}</a>
                     <li>|</li>
                     <a href="user?method=logOut" id="a_top">注销</a>
                     <li>|</li>
@@ -63,7 +63,8 @@
     </div>
 </div>
 <div id="second">
-    <a href="/" id="seimg" style=" margin-top:23px;"><img id="logo" src="image/logo_top.png" width="55" height="54"/></a>
+    <a href="/" id="seimg" style=" margin-top:23px;"><img id="logo" src="image/logo_top.png" width="55"
+                                                          height="54"/></a>
     <a href="/" id="seimg" style=" margin-top:17px;"><img id="gif" src="image/yyymix.gif" width="180" height="66"/></a>
     <p id="goodsType">
         <!-- 根据ajax 回调函数 填写数据 到此id中 -->

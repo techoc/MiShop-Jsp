@@ -13,7 +13,7 @@ public class Address implements Serializable {//序列化
     private int u_id;        //用户实体的主键属性
     private String a_name;   //收件人名称
     private String a_phone;  //收件人电话
-    private String a_detial; //收件人详细地址
+    private String a_detail; //收件人详细地址
     private int a_state;     //收件地址状态 0非默认 1默认地址
 
     public int getA_id() {
@@ -48,12 +48,12 @@ public class Address implements Serializable {//序列化
         this.a_phone = a_phone;
     }
 
-    public String getA_detial() {
-        return a_detial;
+    public String getA_detail() {
+        return a_detail;
     }
 
-    public void setA_detial(String a_detial) {
-        this.a_detial = a_detial;
+    public void setA_detail(String a_detail) {
+        this.a_detail = a_detail;
     }
 
     public int getA_state() {
@@ -71,7 +71,7 @@ public class Address implements Serializable {//序列化
                 ", u_id=" + u_id +
                 ", a_name='" + a_name + '\'' +
                 ", a_phone='" + a_phone + '\'' +
-                ", a_detial='" + a_detial + '\'' +
+                ", a_detial='" + a_detail + '\'' +
                 ", a_state=" + a_state +
                 '}';
     }
