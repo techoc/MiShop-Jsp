@@ -51,9 +51,9 @@
                     <li>|</li>
                     <a href="user?method=logOut" id="a_top">注销</a>
                     <li>|</li>
-                    <a href="getOrderList" id="a_top">我的订单</a>
+                    <a href="orders?method=show" id="a_top">我的订单</a>
                     <li>|</li>
-                    <a href="userservlet?method=getAddress" id="a_top">地址管理</a>
+                    <a href="address?method=show" id="a_top">地址管理</a>
                 </c:if>
                 <li>|</li>
                 <a href="" id="a_top">消息通知</a>

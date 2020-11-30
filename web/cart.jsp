@@ -98,7 +98,8 @@
                 <a id="removeAllProduct" class="btn btn-default btn-lg"
                    onclick="clearCart(${loginUser.u_id})">清空购物车</a>
                 &nbsp;&nbsp;
-                <a href="${pageContext.request.contextPath}/getOrderView" class="btn  btn-danger btn-lg">添加收货地址</a>
+                <a href="${pageContext.request.contextPath}/orders?method=preView&uid=${loginUser.u_id}"
+                   class="btn  btn-danger btn-lg">结算</a>
 
             </div>
             <br><br>

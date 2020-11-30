@@ -14,7 +14,7 @@ public class AddressDaoImpl implements AddressDao {
     @Override
     public List<Address> selectAddressByUid(int uid) throws SQLException {
         QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
-        String sql = "select * from address where u_id=?";
+        String sql = "select * from address where u_id=? order by a_state desc ;";
         List<Address> addresses = queryRunner.query(sql, new BeanListHandler<>(Address.class), uid);
         return addresses;
     }

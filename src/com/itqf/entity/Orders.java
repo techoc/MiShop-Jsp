@@ -13,9 +13,10 @@ public class Orders implements Serializable {
     private String o_id;    //订单编号是字符串类型但是也是唯一标识
     private int u_id;       //用户实体的主键属性
     private int a_id;       //地址实体的唯一主键列
+    private Address address;
     private BigDecimal o_count; //订单的总金额
     private Date o_time;        //订单的详细时间
-    private int o_state;        //订单状态 0 未付款，1已经付款未发货 2发货待收货 3 收货待评价 4订单完成 5 退货状态
+    private int o_state;        //订单状态 1 未付款，2已经付款未发货 3发货待收货 4 收货待评价 4订单完成 5 退货状态
 
     public String getO_id() {
         return o_id;
@@ -63,6 +64,14 @@ public class Orders implements Serializable {
 
     public void setO_state(int o_state) {
         this.o_state = o_state;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     @Override

@@ -83,7 +83,7 @@
                                                         <div class="col-sm-10">
                                                             <input type="hidden" name="a_id" value="${address.a_id}">
                                                             <input type="hidden" name="a_state"
-                                                                   value="${address.a_state}">
+                                                            value="${address.a_state}">
                                                             <input type="text" name="a_name" class="form-control"
                                                                    value="${address.a_name}">
                                                         </div>
@@ -98,8 +98,8 @@
                                                     <div class="form-group">
                                                         <label class="col-sm-2 control-label">收件人</label>
                                                         <div class="col-sm-10">
-                                                            <input type="text" name="a_detail" class="form-control"
-                                                                   value="${address.a_detail}">
+                                                            <textarea rows="4" class="form-control"
+                                                                      name="a_detail"></textarea>
                                                         </div>
                                                     </div>
 
